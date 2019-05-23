@@ -1,0 +1,432 @@
+Python 3.7.1 (v3.7.1:260ec2c36a, Oct 20 2018, 14:05:16) [MSC v.1915 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 1
+1
+>>> bin(1)
+'0b1'
+>>> bin(15)
+'0b1111'
+>>> oct(20)
+'0o24'
+>>> bin(25)
+'0b11001'
+>>> bin(78600)
+'0b10011001100001000'
+>>> 1+5
+6
+>>> 2+5+9+20
+36
+>>> 100+1000+1000
+2100
+>>> 1*2
+2
+>>> 2*2
+4
+>>> 2*3
+6
+>>> 2*0.5
+1.0
+>>> 2*100
+200
+>>> 150*2
+300
+>>> flot(10.2)
+Traceback (most recent call last):
+  File "<pyshell#15>", line 1, in <module>
+    flot(10.2)
+NameError: name 'flot' is not defined
+>>> 5
+5
+>>> type(5)
+<class 'int'>
+>>> 5.5
+5.5
+>>> type(5.5)
+<class 'float'>
+>>> float(10.2)
+10.2
+>>> int(10.2)
+10
+>>> boolian(10)
+Traceback (most recent call last):
+  File "<pyshell#22>", line 1, in <module>
+    boolian(10)
+NameError: name 'boolian' is not defined
+>>> bolian(10)
+Traceback (most recent call last):
+  File "<pyshell#23>", line 1, in <module>
+    bolian(10)
+NameError: name 'bolian' is not defined
+>>> 
+>>> a=10
+>>> type(a)
+<class 'int'>
+>>> a="10"
+>>> type(a)
+<class 'str'>
+>>> 
+>>> a=20.5
+>>> type(a)
+<class 'float'>
+>>> 
+>>> b="kashyap"
+>>> type(b)
+<class 'str'>
+>>> 
+>>> a=10
+>>> b=20
+>>> print(a+b)
+30
+>>> 
+>>> c=(a+b)
+>>> print(c)
+30
+>>> 
+>>> a*2
+20
+>>> a*5
+50
+>>> a*6
+60
+>>> a.__add__(25)
+35
+>>> 
+>>> 
+>>> a+15
+25
+>>> dir(a)
+['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delattr__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floor__', '__floordiv__', '__format__', '__ge__', '__getattribute__', '__getnewargs__', '__gt__', '__hash__', '__index__', '__init__', '__init_subclass__', '__int__', '__invert__', '__le__', '__lshift__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__round__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']
+>>> bit_lenth(a)
+Traceback (most recent call last):
+  File "<pyshell#51>", line 1, in <module>
+    bit_lenth(a)
+NameError: name 'bit_lenth' is not defined
+>>> k="kashyap"
+>>> k.bit_length()
+Traceback (most recent call last):
+  File "<pyshell#53>", line 1, in <module>
+    k.bit_length()
+AttributeError: 'str' object has no attribute 'bit_length'
+>>> k.length()
+Traceback (most recent call last):
+  File "<pyshell#54>", line 1, in <module>
+    k.length()
+AttributeError: 'str' object has no attribute 'length'
+>>> k.bit_length()
+Traceback (most recent call last):
+  File "<pyshell#55>", line 1, in <module>
+    k.bit_length()
+AttributeError: 'str' object has no attribute 'bit_length'
+>>> 
+>>> 
+>>> a.bit_length()
+4
+>>> b=200000
+>>> b.bit_length()
+18
+>>> 
+>>> b.conjugate()
+200000
+>>> d=a+bj
+Traceback (most recent call last):
+  File "<pyshell#63>", line 1, in <module>
+    d=a+bj
+NameError: name 'bj' is not defined
+>>> d=a+b+3j
+>>> type(d)
+<class 'complex'>
+>>> 
+>>> 
+>>> a.denominator
+1
+>>> a=500
+>>> a.denominator
+1
+>>> help(a.denominator)
+Help on int object:
+
+class int(object)
+ |  int([x]) -> integer
+ |  int(x, base=10) -> integer
+ |  
+ |  Convert a number or string to an integer, or return 0 if no arguments
+ |  are given.  If x is a number, return x.__int__().  For floating point
+ |  numbers, this truncates towards zero.
+ |  
+ |  If x is not a number or if base is given, then x must be a string,
+ |  bytes, or bytearray instance representing an integer literal in the
+ |  given base.  The literal can be preceded by '+' or '-' and be surrounded
+ |  by whitespace.  The base defaults to 10.  Valid bases are 0 and 2-36.
+ |  Base 0 means to interpret the base from the string as an integer literal.
+ |  >>> int('0b100', base=0)
+ |  4
+ |  
+ |  Methods defined here:
+ |  
+ |  __abs__(self, /)
+ |      abs(self)
+ |  
+ |  __add__(self, value, /)
+ |      Return self+value.
+ |  
+ |  __and__(self, value, /)
+ |      Return self&value.
+ |  
+ |  __bool__(self, /)
+ |      self != 0
+ |  
+ |  __ceil__(...)
+ |      Ceiling of an Integral returns itself.
+ |  
+ |  __divmod__(self, value, /)
+ |      Return divmod(self, value).
+ |  
+ |  __eq__(self, value, /)
+ |      Return self==value.
+ |  
+ |  __float__(self, /)
+ |      float(self)
+ |  
+ |  __floor__(...)
+ |      Flooring an Integral returns itself.
+ |  
+ |  __floordiv__(self, value, /)
+ |      Return self//value.
+ |  
+ |  __format__(self, format_spec, /)
+ |      Default object formatter.
+ |  
+ |  __ge__(self, value, /)
+ |      Return self>=value.
+ |  
+ |  __getattribute__(self, name, /)
+ |      Return getattr(self, name).
+ |  
+ |  __getnewargs__(self, /)
+ |  
+ |  __gt__(self, value, /)
+ |      Return self>value.
+ |  
+ |  __hash__(self, /)
+ |      Return hash(self).
+ |  
+ |  __index__(self, /)
+ |      Return self converted to an integer, if self is suitable for use as an index into a list.
+ |  
+ |  __int__(self, /)
+ |      int(self)
+ |  
+ |  __invert__(self, /)
+ |      ~self
+ |  
+ |  __le__(self, value, /)
+ |      Return self<=value.
+ |  
+ |  __lshift__(self, value, /)
+ |      Return self<<value.
+ |  
+ |  __lt__(self, value, /)
+ |      Return self<value.
+ |  
+ |  __mod__(self, value, /)
+ |      Return self%value.
+ |  
+ |  __mul__(self, value, /)
+ |      Return self*value.
+ |  
+ |  __ne__(self, value, /)
+ |      Return self!=value.
+ |  
+ |  __neg__(self, /)
+ |      -self
+ |  
+ |  __or__(self, value, /)
+ |      Return self|value.
+ |  
+ |  __pos__(self, /)
+ |      +self
+ |  
+ |  __pow__(self, value, mod=None, /)
+ |      Return pow(self, value, mod).
+ |  
+ |  __radd__(self, value, /)
+ |      Return value+self.
+ |  
+ |  __rand__(self, value, /)
+ |      Return value&self.
+ |  
+ |  __rdivmod__(self, value, /)
+ |      Return divmod(value, self).
+ |  
+ |  __repr__(self, /)
+ |      Return repr(self).
+ |  
+ |  __rfloordiv__(self, value, /)
+ |      Return value//self.
+ |  
+ |  __rlshift__(self, value, /)
+ |      Return value<<self.
+ |  
+ |  __rmod__(self, value, /)
+ |      Return value%self.
+ |  
+ |  __rmul__(self, value, /)
+ |      Return value*self.
+ |  
+ |  __ror__(self, value, /)
+ |      Return value|self.
+ |  
+ |  __round__(...)
+ |      Rounding an Integral returns itself.
+ |      Rounding with an ndigits argument also returns an integer.
+ |  
+ |  __rpow__(self, value, mod=None, /)
+ |      Return pow(value, self, mod).
+ |  
+ |  __rrshift__(self, value, /)
+ |      Return value>>self.
+ |  
+ |  __rshift__(self, value, /)
+ |      Return self>>value.
+ |  
+ |  __rsub__(self, value, /)
+ |      Return value-self.
+ |  
+ |  __rtruediv__(self, value, /)
+ |      Return value/self.
+ |  
+ |  __rxor__(self, value, /)
+ |      Return value^self.
+ |  
+ |  __sizeof__(self, /)
+ |      Returns size in memory, in bytes.
+ |  
+ |  __str__(self, /)
+ |      Return str(self).
+ |  
+ |  __sub__(self, value, /)
+ |      Return self-value.
+ |  
+ |  __truediv__(self, value, /)
+ |      Return self/value.
+ |  
+ |  __trunc__(...)
+ |      Truncating an Integral returns itself.
+ |  
+ |  __xor__(self, value, /)
+ |      Return self^value.
+ |  
+ |  bit_length(self, /)
+ |      Number of bits necessary to represent self in binary.
+ |      
+ |      >>> bin(37)
+ |      '0b100101'
+ |      >>> (37).bit_length()
+ |      6
+ |  
+ |  conjugate(...)
+ |      Returns self, the complex conjugate of any int.
+ |  
+ |  to_bytes(self, /, length, byteorder, *, signed=False)
+ |      Return an array of bytes representing an integer.
+ |      
+ |      length
+ |        Length of bytes object to use.  An OverflowError is raised if the
+ |        integer is not representable with the given number of bytes.
+ |      byteorder
+ |        The byte order used to represent the integer.  If byteorder is 'big',
+ |        the most significant byte is at the beginning of the byte array.  If
+ |        byteorder is 'little', the most significant byte is at the end of the
+ |        byte array.  To request the native byte order of the host system, use
+ |        `sys.byteorder' as the byte order value.
+ |      signed
+ |        Determines whether two's complement is used to represent the integer.
+ |        If signed is False and a negative integer is given, an OverflowError
+ |        is raised.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Class methods defined here:
+ |  
+ |  from_bytes(bytes, byteorder, *, signed=False) from builtins.type
+ |      Return the integer represented by the given array of bytes.
+ |      
+ |      bytes
+ |        Holds the array of bytes to convert.  The argument must either
+ |        support the buffer protocol or be an iterable object producing bytes.
+ |        Bytes and bytearray are examples of built-in objects that support the
+ |        buffer protocol.
+ |      byteorder
+ |        The byte order used to represent the integer.  If byteorder is 'big',
+ |        the most significant byte is at the beginning of the byte array.  If
+ |        byteorder is 'little', the most significant byte is at the end of the
+ |        byte array.  To request the native byte order of the host system, use
+ |        `sys.byteorder' as the byte order value.
+ |      signed
+ |        Indicates whether two's complement is used to represent the integer.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Static methods defined here:
+ |  
+ |  __new__(*args, **kwargs) from builtins.type
+ |      Create and return a new object.  See help(type) for accurate signature.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |  
+ |  denominator
+ |      the denominator of a rational number in lowest terms
+ |  
+ |  imag
+ |      the imaginary part of a complex number
+ |  
+ |  numerator
+ |      the numerator of a rational number in lowest terms
+ |  
+ |  real
+ |      the real part of a complex number
+
+>>> 
+>>> hex(a)
+'0x1f4'
+>>> hex(25)
+'0x19'
+>>> hex(55aA)
+SyntaxError: invalid syntax
+>>> hex(55a)
+SyntaxError: invalid syntax
+>>> hex(5A)
+SyntaxError: invalid syntax
+>>> 500/2
+250.0
+>>> 500%2
+0
+>>> 500/5
+100.0
+>>> 
+>>> oct(a)
+'0o764'
+>>> bin(a)
+'0b111110100'
+>>> a**b
+
+2**3
+
+
+
+
+
+
+
+>>> 2**5
+32
+>>> 2*6
+12
+>>> 2**6
+64
+>>> 2**7
+128
+>>> 2***3
+SyntaxError: invalid syntax
+>>> 2**3
+8
+>>> 
